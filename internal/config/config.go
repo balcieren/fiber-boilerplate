@@ -7,7 +7,7 @@ import (
 )
 
 type Config struct {
-	Port, DatabaseURI, SigningKey, RedisAddr, RedisPassword string
+	Port, DatabaseURI string
 }
 
 func New() (*Config, error) {
