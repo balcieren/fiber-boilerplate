@@ -4,7 +4,7 @@ go 1.18
 
 require (
 	entgo.io/ent v0.10.1
-	github.com/gofiber/fiber/v2 v2.34.1
+	github.com/gofiber/fiber/v2 v2.35.0
 	go.uber.org/automaxprocs v1.5.1
 )
 
@@ -41,7 +41,7 @@ require (
 	github.com/joho/godotenv v1.4.0
 	github.com/klauspost/compress v1.15.0 // indirect
 	github.com/valyala/bytebufferpool v1.0.0 // indirect
-	github.com/valyala/fasthttp v1.37.0 // indirect
+	github.com/valyala/fasthttp v1.38.0 // indirect
 	github.com/valyala/tcplisten v1.0.0 // indirect
 	go.uber.org/fx v1.17.1
 	golang.org/x/sys v0.0.0-20220227234510-4e6760a101f9 // indirect
