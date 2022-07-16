@@ -5,7 +5,9 @@ import (
 	"fmt"
 
 	"github.com/balcieren/fiber-boilerplate/internal/api/helper"
-	"github.com/balcieren/fiber-boilerplate/internal/api/router"
+	v1 "github.com/balcieren/fiber-boilerplate/internal/api/v1"
+	v2 "github.com/balcieren/fiber-boilerplate/internal/api/v2"
+
 	"github.com/balcieren/fiber-boilerplate/internal/config"
 	"github.com/gofiber/fiber/v2"
 	"github.com/gofiber/fiber/v2/middleware/logger"
@@ -19,10 +21,11 @@ func New() *fiber.App {
 	})
 }
 
-func Start(lifecycle fx.Lifecycle, app *fiber.App, config *config.Config, router *router.Router) {
+func Start(lifecycle fx.Lifecycle, app *fiber.App, config *config.Config, rv1 *v1.Router, rv2 *v2.Router) {
 	app.Use(logger.New())
 
-	router.Setup()
+	rv1.Setup()
+	rv2.Setup()
 
 	lifecycle.Append(fx.Hook{
 		OnStart: func(ctx context.Context) error {

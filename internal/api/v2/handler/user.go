@@ -3,21 +3,13 @@ package handler
 import (
 	"context"
 
-	"github.com/balcieren/fiber-boilerplate/pkg/ent"
-	"github.com/balcieren/fiber-boilerplate/pkg/service"
+	"github.com/balcieren/fiber-boilerplate/internal/api/v2/service"
 	"github.com/gofiber/fiber/v2"
 )
 
 func (h *Handler) GetAllUser(c *fiber.Ctx) error {
-	query := new(service.GetAllUserRequest)
-	if err := c.QueryParser(query); err != nil {
-		return fiber.NewError(fiber.StatusBadRequest, err.Error())
-	}
-
-	users, err := h.service.GetAllUser(context.Background(), service.GetAllUserRequest{
-		PerPage: query.PerPage,
-	})
-	if ent.IsNotFound(err) {
+	users, err := h.service.GetAllUser(context.Background(), service.GetAllUserRequest{})
+	if err != nil {
 		return fiber.NewError(fiber.StatusNotFound, err.Error())
 	}
 

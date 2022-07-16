@@ -1,8 +1,8 @@
 package handler
 
 import (
+	"github.com/balcieren/fiber-boilerplate/internal/api/v2/service"
 	"github.com/balcieren/fiber-boilerplate/internal/config"
-	"github.com/balcieren/fiber-boilerplate/pkg/service"
 )
 
 type Handler struct {
@@ -12,7 +12,7 @@ type Handler struct {
 
 func New(service *service.Service, config *config.Config) *Handler {
 	return &Handler{
-		service: service,
-		config:  config,
+		service,
+		config,
 	}
 }

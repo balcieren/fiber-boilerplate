@@ -1,8 +1,8 @@
 package middleware
 
 import (
+	"github.com/balcieren/fiber-boilerplate/internal/api/v2/service"
 	"github.com/balcieren/fiber-boilerplate/internal/config"
-	"github.com/balcieren/fiber-boilerplate/pkg/service"
 )
 
 type Middleware struct {
@@ -12,7 +12,7 @@ type Middleware struct {
 
 func New(service *service.Service, config *config.Config) *Middleware {
 	return &Middleware{
-		service: service,
-		config:  config,
+		service,
+		config,
 	}
 }

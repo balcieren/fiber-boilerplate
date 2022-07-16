@@ -16,6 +16,8 @@ func (User) Fields() []ent.Field {
 		field.Uint("id"),
 		field.String("name"),
 		field.Int("age").
+			Optional().
+			Nillable().
 			Positive(),
 	}
 }
