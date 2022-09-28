@@ -43,6 +43,6 @@ require (
 	github.com/valyala/bytebufferpool v1.0.0 // indirect
 	github.com/valyala/fasthttp v1.40.0 // indirect
 	github.com/valyala/tcplisten v1.0.0 // indirect
-	go.uber.org/fx v1.18.1
+	go.uber.org/fx v1.18.2
 	golang.org/x/sys v0.0.0-20220722155257-8c9f86f7a55f // indirect
 )
