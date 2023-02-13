@@ -3,7 +3,7 @@ module github.com/balcieren/fiber-boilerplate
 go 1.18
 
 require (
-	entgo.io/ent v0.11.7
+	entgo.io/ent v0.11.8
 	github.com/gofiber/fiber/v2 v2.42.0
 	go.uber.org/automaxprocs v1.5.1
 )
