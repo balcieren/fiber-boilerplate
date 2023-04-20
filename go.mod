@@ -3,13 +3,13 @@ module github.com/balcieren/fiber-boilerplate
 go 1.18
 
 require (
-	entgo.io/ent v0.11.10
+	entgo.io/ent v0.12.2
 	github.com/gofiber/fiber/v2 v2.43.0
 	go.uber.org/automaxprocs v1.5.2
 )
 
 require (
-	ariga.io/atlas v0.9.2-0.20230303073438-03a4779a6338 // indirect
+	ariga.io/atlas v0.10.0 // indirect
 	github.com/agext/levenshtein v1.2.3 // indirect
 	github.com/apparentlymart/go-textseg/v13 v13.0.0 // indirect
 	github.com/go-openapi/inflect v0.19.0 // indirect
