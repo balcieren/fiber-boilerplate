@@ -3,7 +3,7 @@ module github.com/balcieren/fiber-boilerplate
 go 1.18
 
 require (
-	entgo.io/ent v0.12.4
+	entgo.io/ent v0.12.5
 	github.com/gofiber/fiber/v2 v2.50.0
 	go.uber.org/automaxprocs v1.5.3
 )
@@ -46,6 +46,6 @@ require (
 	github.com/valyala/bytebufferpool v1.0.0 // indirect
 	github.com/valyala/fasthttp v1.50.0 // indirect
 	github.com/valyala/tcplisten v1.0.0 // indirect
-	golang.org/x/sys v0.13.0 // indirect
 	go.uber.org/fx v1.20.1
+	golang.org/x/sys v0.13.0 // indirect
 )
