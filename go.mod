@@ -4,7 +4,7 @@ go 1.22
 
 require (
 	entgo.io/ent v0.13.1
-	github.com/gofiber/fiber/v2 v2.52.4
+	github.com/gofiber/fiber/v2 v2.52.5
 	go.uber.org/automaxprocs v1.5.3
 )
 
