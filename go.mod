@@ -1,10 +1,10 @@
 module github.com/balcieren/fiber-boilerplate
 
 go 1.22
-toolchain go1.23.2
+toolchain go1.24.1
 
 require (
-	entgo.io/ent v0.14.3
+	entgo.io/ent v0.14.4
 	github.com/gofiber/fiber/v2 v2.52.6
 	go.uber.org/automaxprocs v1.6.0
 )
