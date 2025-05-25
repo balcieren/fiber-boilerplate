@@ -6,7 +6,7 @@ toolchain go1.24.1
 
 require (
 	entgo.io/ent v0.14.4
-	github.com/gofiber/fiber/v2 v2.52.7
+	github.com/gofiber/fiber/v2 v2.52.8
 	go.uber.org/automaxprocs v1.6.0
 )
 
